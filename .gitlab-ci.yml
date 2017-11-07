@@ -1,0 +1,20 @@
+stages:
+    - build
+variables:
+  CONTAINER_TEST_IMAGE: imidocker.uni-muenster.de/odmauswertung/odmauswertung:latest
+dockerbuild:
+    stage: build
+    before_script:
+        - docker info
+        - hostname
+        - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN imidocker.uni-muenster.de
+    script:
+        - mvn package
+        - cp target/ROOT.war .
+        - docker build --no-cache -t $CONTAINER_TEST_IMAGE .
+        - docker push $CONTAINER_TEST_IMAGE
+    only:
+        - master
+    artifacts:
+        paths:
+            - ROOT.war

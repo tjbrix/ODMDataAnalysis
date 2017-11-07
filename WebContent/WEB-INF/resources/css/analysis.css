@@ -1,0 +1,116 @@
+/**
+ * ODM Data Analysis - a tool for the automatic validation, monitoring and
+ * generation of generic descriptive statistics of clinical data.
+ * 
+ * Copyright (c) 2017 Institut für Medizinische Informatik, Münster
+ *
+ * ODM Data Analysis is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by the
+ * Free Software Foundation, version 3.
+ *
+ * ODM Data Analysis is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for 
+ * more details.
+ *
+ * You should have received a copy of the GNU General Public License in the file
+ * COPYING along with ODM Data Analysis. If not, see <http://www.gnu.org/licenses/>.
+ */
+@CHARSET "UTF-8";
+/**
+*@author Saad Sarfraz
+*/
+
+
+.table-meta-tr{
+	background: #5b5757;
+}
+.table-heading{
+	
+	text-align: center;
+	
+}
+
+.charts-td > img:not(#symbol){
+	display: none;
+}
+
+
+/* rows that are not item groups*/
+.items-table-tr {
+	display: none;
+	background: #d0d3d8;
+}
+
+
+tr.itemGroup-tr, .sign, .expanded-all , #symbol, .charts-td{
+	cursor:pointer;
+}
+
+.itemGroup-tr .sign:after, .expanded-all .sign:after{
+	content: "-";
+	
+}
+
+.itemGroup-tr.minimize .sign:after, .collapsed-all .sign:after{
+	content: "+";
+}
+
+.itemGroup-tr{
+	background-color : #b7b7b7;
+}
+
+.table-text, th, tr.itemGroup-tr, .charts-td > img{
+	
+	text-align: center;
+/*	vertical-align: center; */
+}
+
+
+
+img#symbol{
+	text-decoration:none;
+	height:3em;
+	width:auto;
+	display: block;
+    margin: 0 auto;
+}
+
+
+.sub-table thead{
+	background-color: #b3b8bf;
+}
+
+.sub-table td{
+	text-align : center;
+}
+
+#analysis-table td{
+	text-align : center;
+}
+ 
+.disabled-table{
+	display : none;
+}
+
+.closebtn-table{
+	display : block;
+	text-align : right;
+	font-size: 30px;
+	color : black;
+	
+}
+
+.itemGroup-head th{
+	text-align : center;
+	vertical-align : middle;
+	width:20px;
+}
+/*center sub navigation (results) bar */
+#results-tabs{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+

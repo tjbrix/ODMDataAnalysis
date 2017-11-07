@@ -1,0 +1,55 @@
+/**
+* ODM Data Analysis - a tool for the automatic validation, monitoring and
+* generation of generic descriptive statistics of clinical data.
+* 
+* Copyright (c) 2017 Institut für Medizinische Informatik, Münster
+*
+* ODM Data Analysis is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by the
+* Free Software Foundation, version 3.
+*
+* ODM Data Analysis is distributed in the hope that it will be useful, but
+* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for 
+* more details.
+*
+* You should have received a copy of the GNU General Public License in the file
+* COPYING along with ODM Data Analysis. If not, see <http://www.gnu.org/licenses/>.
+*/
+ @CHARSET "UTF-8";
+ /**
+*@author Saad Sarfraz
+*/
+.loader {
+	z-index: 999;
+	height: 2em;
+	width: 1em;
+	overflow: show;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+#loading-pdf-anim{
+	text-align : center;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+

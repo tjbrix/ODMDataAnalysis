@@ -1,0 +1,223 @@
+/**
+* ODM Data Analysis - a tool for the automatic validation, monitoring and
+* generation of generic descriptive statistics of clinical data.
+* 
+* Copyright (c) 2017 Institut für Medizinische Informatik, Münster
+*
+* ODM Data Analysis is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by the
+* Free Software Foundation, version 3.
+*
+* ODM Data Analysis is distributed in the hope that it will be useful, but
+* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for 
+* more details.
+*
+* You should have received a copy of the GNU General Public License in the file
+* COPYING along with ODM Data Analysis. If not, see <http://www.gnu.org/licenses/>.
+*/
+ @CHARSET "UTF-8";
+ /**
+*@author Saad Sarfraz
+*/
+body {
+	padding-top: 2px;
+}
+
+.page-header > nav{
+	background-color: #329ca3;
+	
+}
+
+
+.footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 40px;
+	border-top: 1px solid #eee;
+}
+
+.jumbotron {
+	color: white;
+	padding: 14px 24px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 21px;
+    background-color: #3e444f;
+}
+
+@media (min-width: 768px) {
+
+.navbar-nav .nav-item {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 auto;
+		-ms-flex: 1 0 auto;
+			flex: 1 0 auto;
+ }
+}
+
+.about {
+	padding: 20px 20px 20px 20px;
+	margin: 30px;
+	width: 95%;
+	border-style : double;
+}
+
+/* style for sub-navigation bar */
+
+#sub-nav-container{
+	display : block;
+	text-align : center;
+}
+
+#sub-nav-container ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#sub-nav-container ul li { display: inline; }
+
+#sub-nav-container ul li a
+{
+
+	padding: .2em 1em;
+	color: gray;
+	font-size: 18px;
+
+}
+
+#sub-nav-container ul li a.active
+{
+	
+
+	padding: .2em 1em;
+	font-weight: bold;
+	color: black;
+ 	text-decoration: underline;
+
+
+
+}
+
+
+/* style for sub-heading end*/
+
+.heading-name {
+	text-align: center;
+	margin-top: 5px;
+}
+
+#pdf-object-view {
+	width: 100%;
+	height: 90%;
+	
+	padding-top: 24px;
+
+}
+
+ #show-pdf-btn{
+	text-align: center;
+
+}
+
+#download-xml-btn{
+	text-align: center;
+	margin-top: 55px;
+}
+
+
+.page-header > h3{
+	color: #3e444f;
+	text-align: center;
+	
+}
+
+/* style for body of page (except heading)*/
+.body-container{
+	max-width: 95%;
+	margin: 0 auto;
+	
+}
+
+.information{
+	padding: 20px 20px 20px 20px;
+}
+.progress-bar-div{
+	display: none;
+	padding-left: 5px ;
+	padding-right: 5px ;
+	padding-bottom: 15px ;
+}
+/* */
+.progress-bar {
+	
+	height: 25px;
+	
+	text-align: center;
+	padding: 5px;
+}
+
+.error-msg{
+	color: red;
+}
+
+.progress-bar-div span{
+	position: absolute;
+	margin-top: 5px;
+	font-size: 17px;
+	text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	color: black;
+	text-align: center;
+	width: 100%;
+}
+
+#download-PDF{
+	margin-top: 5px;
+	text-align : center;
+}
+
+.hidden{
+	display: none !important;
+}
+
+#infospan{
+	font-size : 14px;
+}
+
+#header-navbar a {
+	color : white;
+}
+#header-navbar a.active{
+	font-weight : bold;
+	text-decoration: underline
+}
+/*
+#loading-page-anim{
+	text-align : center;
+}
+ */
+#loading-page-anim-overlay{
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 2;
+	cursor: pointer;
+}
+
+#loader-div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 20px;
+	color: white;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+} 

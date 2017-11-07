@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ODM Data Analysis - a tool for the automatic validation, monitoring and
+ generation of generic descriptive statistics of clinical data.
+ 
+ Copyright (c) 2017 Institut für Medizinische Informatik, Münster
+
+ ODM Data Analysis is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by the
+ Free Software Foundation, version 3.
+
+ ODM Data Analysis is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for 
+ more details.
+
+ You should have received a copy of the GNU General Public License in the file
+ COPYING along with ODM Data Analysis. If not, see <http://www.gnu.org/licenses/>.
+-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns="http://java.sun.com/xml/ns/javaee" 
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+		 version="3.0">
+	<display-name>ODMDataAnalysis</display-name>
+
+	<servlet>
+		<servlet-name>odmdataanalysis</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>odmdataanalysis</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+		<session-timeout>120</session-timeout>
+	</session-config>
+</web-app>
