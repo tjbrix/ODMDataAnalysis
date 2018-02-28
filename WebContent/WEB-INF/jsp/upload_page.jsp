@@ -18,6 +18,7 @@
 -->
 <%-- author: Justin Doods --%>
 <%-- author: Saad Sarfraz --%>
+<%-- author: Tobias Brix --%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
 <head>
@@ -27,6 +28,7 @@
 <link rel="stylesheet" type="text/css" href="resources/css/download.css">
 <link rel="stylesheet" type="text/css" href="resources/css/index.css">
 <link rel="stylesheet" type="text/css" href="resources/css/colors.css">
+<link rel="stylesheet" type="text/css" href="resources/css/footer.css">
 <link rel="stylesheet" type="text/css" href="webjars/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -167,7 +169,47 @@
 		</div>
 		<!-- Site footer -->
 		<footer class="footer">
-			<p>&copy; IMI 2017</p>
+			<div id="copyright">
+			<table class="copyright">
+				<tr>
+					<td>&copy; 2017 - 2018</td>
+					<td></td>
+					<td>Institute of Medical Informatics (IMI), <br/> University of Münster</td>
+				</tr>
+			</table>
+			</div>
+			<div id="impressum">
+			<!-- Code from https://bootsnipp.com/snippets/featured/windows-8-bootstrap-modals -->
+			<button type="button" class="btn btn-primary text-right" data-toggle="modal" data-target=".bs-example-modal-lg">Impressum</button>
+			</div>
+			
+			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			  <div class="modal-dialog modal-lg">
+				<div class="modal-content">
+				  <div class="modal-body">
+						<H2>Impressum</H2>
+						Westfälische Wilhelms-Universität Münster <br>
+						Schlossplatz 2, 48149 Münster <br>
+						Telephone: +49 (251) 83-0 <br>
+						Fax: +49 (251) 83-3 20 90 <br>
+						E-mail: <a href="mailto:verwaltung@uni-muenster.de">verwaltung@uni-muenster.de</a> <br>
+						<br>
+						The WWU Münster is a statutory body and an institution of the Land of North Rhine-Westphalia. 
+						It is represented by the Rector, Professor Dr. Johannes Wessels. <br>
+						<br>
+						Turnover tax identification number: DE 126118759 <br>
+						<br>
+						Edited in accordance with §5 TMG by: <br>
+						Prof. Dr. Martin Dugas <br>
+						Institute of Medical Informatics <br>
+						Albert-Schweizer-Campus 1, Building A11 <br>
+						48149 Münster, Germany <br>
+						Telephone: +49 (251) 83-55262 <br>
+						E-mail: <a href="mailto:imi@uni-muenster.de">imi@uni-muenster.de</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
 		</footer>
 	</div>
 	<!-- /container -->
@@ -185,8 +227,6 @@
 	</script>
 	<script src="resources/js/index.js" type="text/javascript"></script>
 	<script src="resources/js/analysis.js" type="text/javascript"></script>
-	
-
 
 </body>
 </html>
